@@ -1,0 +1,151 @@
+:root{
+    --PrimaryColor: Ihsl (26, 93%, 50%);
+    --HoverColor: Ohsl (26, 90%, 42%);
+    --whiteColor: Ihs1(0, 0%, 100%);
+    --blackColor: Ohsl(0, 0%, 18%);
+    --textColor: Ohsl (240, 1%, 48%);
+    --whiteColorDeam: Ihsl(0, 8%, 93 %);
+    --greyBg: hs1(0, 0%, 96%);
+    --greyText: Irgb(190, 190, 190);
+    --inputColor: hsl(330, 12%, 97%);
+    }
+    .navBarSection .header{
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: transparent;
+        width: 100%;
+        padding: 1rem;
+        z-index: 1000;
+    }
+    
+        .logo{
+        color: var(--whiteColor); 
+        font-weight: 500;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        }
+        .icon{
+        color: var(--PrimaryColor);
+        font-size: 25px;
+        }
+        
+        @media screen and (max-width:768px){
+           
+            .toggleNavbar{
+                display: block;
+            }
+            .navbar{
+                /* background: var(--greyBg); */
+                background-color: #977474;
+                position: absolute;
+                height: max-content;
+                padding: 1rem;
+                width: 100%;
+                /* overflow-x: hidden; */
+                top: 0;
+                left: -500%;
+                box-shadow: 0 2px 4px rgba(209, 209,
+                209,0.904);
+                transition: 1s ease;
+                z-index: 2;
+        }
+        .navLists {
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            align-items: center;
+            margin: auto;
+        }
+        .navItem{
+            padding: 1rem 0;
+        }
+        .navLink{
+            color: var(--textColor);
+            font-size: .9rem;
+            font-weight: 600;
+        }
+        .navLink:hover{
+            color: rgb(226, 221, 214);
+        }
+        .headerBtns{
+            flex-direction: column;
+            /* height: 150px; */
+        }
+        .btn{
+            margin-top: 1rem;
+        }
+        
+        .loginBtn{
+            border: 1px solid black;  
+        }
+        .loginBtn:hover{
+            color: rgb(246, 246, 246);
+        }
+        .signup{
+            background-color: rgb(194, 123, 16);
+        }
+        .signup:hover{
+            color: rgb(255, 255, 255);
+        }
+        .closeNavbar{
+            position: absolute;
+            top: 1rem;
+            right: 1.5rem;
+            color:var(--PrimaryColor); 
+        }
+        .activeNavbar{
+            left:0;
+        }
+        .activeHeader{
+            background-color: #945215;
+            box-shadow: 0 2px 8px 2px rgba(178, 178,
+            178,0.45);
+        }
+       
+    }
+    .toggleNavbar{
+        color: white;
+        font-size: 25px;
+
+    }
+    .toggleNavbar:hover{
+      color: #945215;
+    }
+
+    @media screen and (min-width:769px){
+        .toggleNavbar, .closeNavbar{
+            display: none;
+        }
+        .header{
+            padding: 1.5rem 2rem;
+            
+        } 
+        .navLists{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* flex-direction: row; */
+        }
+        .navItem .navLink{
+            padding: 0 .45rem;
+            font-size: .9rem;
+            font-weight: 400;
+            color: white;
+        }
+        .navLink:hover{
+            color: #945215;
+        }
+        .btn{
+            margin-left: 1rem;
+        }
+        .loginBtn{
+            background: none;
+            border: 1px solid #945215;
+        }
+        .loginBtn:hover{
+            background: white;
+        }
+       }

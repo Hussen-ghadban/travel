@@ -1,0 +1,73 @@
+:root{
+    --PrimaryColor: rgb(201, 106, 22);
+    --HoverColor: Ohsl (26, 90%, 42%);
+    --whiteColor: Ihs1(0, 0%, 100%);
+    --blackColor: Ohsl(0, 0%, 18%);
+    --textColor: Ohsl (240, 1%, 48%);
+    --whiteColorDeam: Ihsl(0, 8%, 93 %);
+    --greyBg: hs1(0, 0%, 96%);
+    --greyText: Irgb(190, 190, 190);
+    --inputColor: hsl(330, 12%, 97%);
+    }
+
+
+    .footer{
+        background: var(--greyBg);
+        padding: 2rem 0;
+
+    }
+    .footer .secContainer{
+        gap: 1.5rem;
+        text-align: center;
+    }
+    .footerLogo{
+        padding-bottom: .5rem;
+    }
+    .footerLogo .logo{
+        color: var(--blackColor);
+        font-weight: 500;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+    }
+
+   
+    .icon{
+        font-size: 25px;
+        color: var(--PrimaryColor);
+        margin-right: .5rem;
+    }
+    .socials{
+        gap: .5rem;
+        margin: auto;
+        justify-content: center;
+    }
+    .socials .icon{
+        font-size: 30px;
+        background: var(--PrimaryColor);
+        border-radius: 50%;
+        padding: 8px;
+        color: var(--whiteColor);
+
+    }
+    .icon:hover{
+        background: var(--blackColor);
+    }
+
+    .footerLinks {
+        display: grid;
+        row-gap: .2rem;
+    }
+    .linkTitle{
+        padding-bottom: .5rem;
+        color: var(--blackColor);
+        font-weight: 700;
+    }
+    li:hover{
+        transform: translateX(10px);
+    }
+    a, .phone, .email{
+        color: var(--textColor);
+        font-size: 13px;
+        font-weight: 500;
+    }

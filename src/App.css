@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Blaka+Hollow&family=Lato:wght@300&family=Montserrat:wght@400;700&family=Urbanist:ital,wght@1,300&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  transition: .3s ease;
+} 
+:root{
+--PrimaryColor: rgb(201, 106, 22);
+--HoverColor: Ohsl (26, 90%, 42%);
+--whiteColor: Ihs1(0, 0%, 100%);
+--blackColor: Ohsl(0, 0%, 18%);
+--textColor: Ohsl (240, 1%, 48%);
+--whiteColorDeam: Ihsl(0, 8%, 93 %);
+--greyBg: hs1(0, 0%, 96%);
+--greyText: Irgb(190, 190, 190);
+--inputColor: hsl(330, 12%, 97%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a{
+  text-decoration: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+li{
+  list-style: none;
   }
+  .section{
+  padding: 4rem 2rem;
+  }
+  .container{
+  padding-left: 1.5rem;
+  padding-right: 1.5em;
+  }
+
+.icon{
+  font-size: 2rem;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+  .grid{
+  display: grid;
+  align-items: center;
   }
-}
+
+  .btn{
+    padding: .4rem 1.5rem;
+    background: var(--PrimaryColor);
+    border: none;
+    outline: none;
+    border-radius: 3rem;
+    cursor: pointer;
+    }
+    .btn a{
+    color: var(--whiteColor);
+    font-weight: 500;
+    }
+
+    .btn:hover{
+      color:var(--whiteColor)
+    }
+
+    .secIntro{
+      max-width: 70%;
+      text-align: center;
+      margin: 0 auto 2rem;
+    }
+    
+    .secIntro .secTitle{
+      color: var(--blackColor);
+      line-height: 1.5em;
+      padding-bottom: .5rem;
+      }
+      .secIntro p{
+      font-size: 13px;
+      color: var(--textColor);
+      font-weight: 500;
+    }
+
+    img,video{
+      width: 100%;
+      height: auto;
+    }
+    input{
+      font-size:100% ;
+    }
+
+    @media screen and(min-width:556px){
+      .mainContent{
+        grid-template-columns: repeat(2,1fr);
+      }
+      
+    }
+
+    @media screen and(min-width:884px){
+      .mainContent{
+        grid-template-columns: repeat(3,1fr);
+      }
+      
+    }
