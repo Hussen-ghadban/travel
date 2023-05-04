@@ -56,12 +56,22 @@
 
 
 .mainContent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
     padding:2rem 0;
-    gap: 1rem;
+    /* gap: 1rem; */
 }
 .singleDestination{
     /* text-align: left; */
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: content;
+    max-width: 400px;
     overflow: hidden;
+    margin: 5px;
     border-radius:1rem;
     box-shadow: 0 2px 8px 2px rgba(178,178,178,0.45);
 }
@@ -148,7 +158,6 @@ p{
 .flex{
     font-size: 16px;
     font-weight: 600;
-    /* align-items: flex-start; */
     transform: translateY(5px);
 }
 

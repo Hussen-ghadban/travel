@@ -4,6 +4,9 @@ import {BsArrowLeftShort} from 'react-icons/bs'
 import {BsArrowRightShort} from 'react-icons/bs'
 import {BsDot} from 'react-icons/bs'
 import img from "../../assets/London.jpg"
+import img2 from "../../assets/dubai.jpg"
+import img3 from "../../assets/machu-peru.jpg"
+import img4 from "../../assets/milan.jpg"
 
 
 const data=[
@@ -15,22 +18,22 @@ const data=[
 },
 {
   id:2,
-   imgSrc:img,
+   imgSrc:img3,
    destTitle:'Machu Picchu',
    location:'Peru',
    grade:'CULTURAL RELAX'
 },
 { id:3,
-  imgSrc:img,
-  destTitle:'Taj Mahal',
-  location:'India',
+  imgSrc:img2,
+  destTitle:'Dbai',
+  location:'Emirates',
   grade:'CULTURAL RELAX'
 },
 {
  id:4,
-  imgSrc:img,
-  destTitle:'Machu Picchu',
-  location:'Peru',
+  imgSrc:img4,
+  destTitle:'Milan',
+  location:'Italy',
   grade:'CULTURAL RELAX'
 }
 ]
@@ -51,11 +54,11 @@ const Popular = () => {
         <BsArrowRightShort className="icon"/>
       </div>
   </div>
-  <div className="mainContent grid">
+  <div className="mainContent">
     {data.map(post=>(
         <div className="singleDestination" key={post.id}>
       <div className="destImage">
-        <img src={img} alt="Image title" />
+        <img src={post.imgSrc} alt="Image title" />
         <div className="overlayInfo">
           <h3>{post.destTitle}</h3>
           <p>{post.location}</p>

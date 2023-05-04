@@ -36,33 +36,33 @@ Dot
           </a>
         </div>
         <div className={active}>
-          <ul className="navLists flex">
-            <li className='navItem'>
+          <div className="navLists flex">
+            <div className='navItem'>
               <a href='#' className='navLink'>Home</a>
-            </li>
-            <li className='navItem'>
+            </div>
+            <div className='navItem'>
               <a href='#' className='navLink'>Products</a>
-            </li>
-            <li className='navItem'>
+            </div>
+            <div className='navItem'>
               <a href='#' className='navLink'>Resources</a>
-            </li>
-            <li className='navItem'>
+            </div>
+            <div className='navItem'>
               <a href='#' className='navLink'>Contact</a>
-            </li>
-            <li className='navItem'>
+            </div>
+            <div className='navItem'>
               <a href='#' className='navLink'>Blog</a>
-            </li>
+            </div>
             <div className="headerBtns">
-              <button className='btn loginBtn'>
+              <button className='loginBtn'>
                 <a href='#'>Login</a> 
               </button>
             </div>
             <div className="headerBtns">
-              <button className='btn signup'>
+              <button className='signup'>
                 <a href='#'>Sign Up</a> 
               </button>
             </div>
-          </ul>
+          </div>
           <div className="closeNavbar" onClick={removeNav}>
             <AiFillCloseCircle className="icon"/>
           </div>
