@@ -48,7 +48,7 @@ const Blog = () => {
         Posts.map(post=>(
           <div className="singlePost grid">
           <div className="imgDiv">
-            <img src={post.postImage} alt={post.title} />
+            <img src={post.postImage} alt={post.title}/>
           </div>
           <div className="postDetails">
             <h3>{post.title}</h3>

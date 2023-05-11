@@ -1,18 +1,5 @@
-:root{
-    --PrimaryColor: Ihsl (26, 93 %, 50%);
-    --HoverColor: Ohsl (26, 90%, 42%);
-    --whiteColor: Ihs1(0, 0%, 100%);
-    --blackColor: Ohsl(0, 0%, 18%);
-    --textColor: Ohsl (240, 1%, 48%);
-    --whiteColorDeam: Ihsl(0, 8%, 93 %);
-    --greyBg: hs1(0, 0%, 96%);
-    --greyText: Irgb(190, 190, 190);
-    --inputColor: hsl(330, 12%, 97%);
-    }
-
-
     .home{
-        height: 80vh;
+        height: 90vh;
         background: linear-gradient(rgba(33,33,33,0.522),
         rgba(33,33,33,0.522)),
         url('../../assets/tree.jpg');
@@ -24,6 +11,7 @@
         justify-content: center;
         margin: auto;
         position: relative;
+        top: -75px;
 
     }
 
@@ -45,10 +33,6 @@
         max-width: 70%;
         text-align: center;
         margin: auto;
-    }
-    .btn{
-        background-color: #db710d;
-        padding: .6rem 1.5rem;
     }
     .homeCard{
         width: 80%;
@@ -96,6 +80,8 @@
         padding: .6rem 1.5rem;
         color: var(--whiteColor);
         font-weight: 600;
+        background-color: #db710d;
+        padding: .6rem 1.5rem;
     }
 
     @media screen and (min-width:480px){
@@ -103,15 +89,24 @@
             bottom: -100px;
             /* border-radius: 5rem; */
             width: 90%;
-            grid-template-columns: repeat(2,1fr);
+           
         }
+    }
+        @media screen and (min-width:700px){
+            .homeCard{
+                bottom: -100px;
+                /* border-radius: 5rem; */
+                width: 90%;
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+            }
         
       }
 
-      @media screen and (min-width:720px){
+      @media screen and (min-width:1200px){
         .homeCard{
+            display: grid;
              grid-template-columns: repeat(4,1fr);
-             /* background-color: blue; */
          }
          
        }

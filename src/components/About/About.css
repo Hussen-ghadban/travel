@@ -1,15 +1,4 @@
-:root{
-    --PrimaryColor: rgb(201, 106, 22);
-    --HoverColor: Ohsl (26, 90%, 42%);
-    --whiteColor: Ihs1(0, 0%, 100%);
-    --blackColor: Ohsl(0, 0%, 18%);
-    --textColor: Ohsl (240, 1%, 48%);
-    --whiteColorDeam: Ihsl(0, 8%, 93 %);
-    --greyBg: hs1(0, 0%, 96%);
-    --greyText: Irgb(190, 190, 190);
-    --inputColor: hsl(330, 12%, 97%);
-    }
-     
+    
     .title{
         color: var(--blackColor);
         line-height: 1.5rem;

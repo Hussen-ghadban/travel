@@ -12,13 +12,13 @@ const Footer = () => {
         <div className="logoDiv">
           <div className="footerLogo">
             <a href="#" className="logo flex">
-             <h1 className="flex"> <SiYourtraveldottv className="icon "/>Dot</h1>
+             <h1 className="flex"> <SiYourtraveldottv className="iconj "/>Dot</h1>
             </a>
           </div>
           <div className="socials flex">
-          <ImFacebook className="icon"/>
-          <BsTwitter className="icon"/>
-          <AiFillInstagram className="icon"/>
+          <ImFacebook className="iconFooter"/>
+          <BsTwitter className="iconFooter"/>
+          <AiFillInstagram className="iconFooter"/>
         </div>
         </div>
         <div className="footerLinks">
@@ -26,7 +26,7 @@ const Footer = () => {
            information
           </span>
           <li>
-            <a href="#">DEstination</a>
+            <a href="#">Destination</a>
           </li>
           <li>
             <a href="#">Support</a>

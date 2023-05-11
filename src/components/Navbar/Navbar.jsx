@@ -30,7 +30,7 @@ window.addEventListener('scroll',addBg)
       <div className={transparent}>
         <div className="logoDiv">
           <a href="#" className="logo">
-             <h1><SiYourtraveldottv className="icon"/>
+             <h1><SiYourtraveldottv/>
 Dot
 </h1>
           </a>
@@ -52,23 +52,23 @@ Dot
             <div className='navItem'>
               <a href='#' className='navLink'>Blog</a>
             </div>
-            <div className="headerBtns">
+            <div>
               <button className='loginBtn'>
-                <a href='#'>Login</a> 
+              <a href='#' className='loginLink'>Login</a> 
               </button>
             </div>
-            <div className="headerBtns">
+            <div>
               <button className='signup'>
-                <a href='#'>Sign Up</a> 
+                <a href='#' className='loginLink'>Sign Up</a> 
               </button>
             </div>
           </div>
           <div className="closeNavbar" onClick={removeNav}>
-            <AiFillCloseCircle className="icon"/>
+            <AiFillCloseCircle />
           </div>
         </div>
         <div className="toggleNavbar" onClick={shownav}>
-           <TbGridDots className="icon"/>
+           <TbGridDots />
         </div>
       </div>
     </section>

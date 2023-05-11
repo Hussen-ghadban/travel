@@ -54,7 +54,7 @@ const Popular = () => {
         <BsArrowRightShort className="icon"/>
       </div>
   </div>
-  <div className="mainContent">
+  <div className="mainContentPopular">
     {data.map(post=>(
         <div className="singleDestination" key={post.id}>
       <div className="destImage">

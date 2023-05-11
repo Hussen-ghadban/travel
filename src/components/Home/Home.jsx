@@ -20,17 +20,17 @@ const Home = () => {
             <div className="homeCard">
               <div className="locationDiv">
                 <label htmlFor='location'>Location</label>
-                <input type="text" placeholder='Dream Destination' />
+                <input type="text" className='input' placeholder='Dream Destination' />
               </div>
 
               <div className="distDiv">
-                <label htmlFor='distance'>Location</label>
-                <input type="text" placeholder='11/Meters' />
+                <label htmlFor='distance'>Distance</label>
+                <input type="text" className='input' placeholder='11/Meters' />
               </div>
 
               <div className="priceDiv">
-                <label htmlFor='price'>Location</label>
-                <input type="text" placeholder='$140-$500' />
+                <label htmlFor='price'>Price</label>
+                <input type="text" className='input' placeholder='$140-$500' />
               </div>
               <button className='btn'>
                 search

@@ -1,16 +1,6 @@
-:root{
-    --PrimaryColor: Ihsl (26, 93%, 50%);
-    --HoverColor: Ohsl (26, 90%, 42%);
-    --whiteColor: Ihs1(0, 0%, 100%);
-    --blackColor: Ohsl(0, 0%, 18%);
-    --textColor: Ohsl (240, 1%, 48%);
-    --whiteColorDeam: Ihsl(0, 8%, 93 %);
-    --greyBg: hs1(0, 0%, 96%);
-    --greyText: Irgb(190, 190, 190);
-    --inputColor: hsl(330, 12%, 97%);
-    }
+
     .navBarSection .header{
-        position: fixed;
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -27,13 +17,30 @@
         align-items: center;
         justify-content: center;
         }
-        .icon{
-        color: var(--PrimaryColor);
-        font-size: 25px;
+
+        .loginLink{
+            color: black;
         }
-        
+        .loginBtn{
+            padding: .7rem;
+            border-radius: 1rem;
+            background-color: rgb(236, 229, 217);
+            margin-right: .5rem;
+            border: 0;
+
+        }
+        .signup{
+           padding: .7rem;
+           border-radius: 1rem;
+           border: 0;
+           background-color: rgb(194, 123, 16);
+           color: white !important;
+        }
         @media screen and (max-width:768px){
-           
+            .navBarSection .header{
+                position: fixed;
+            
+            }
             .toggleNavbar{
                 display: block;
             }
@@ -70,37 +77,32 @@
         .navLink:hover{
             color: rgb(226, 221, 214);
         }
-        .headerBtns{
-            flex-direction: column;
-            /* height: 150px; */
+       
+        .loginLink{
+            color: black;
+            font-weight: 500;
+            font-size: .9rem;
         }
-        /* .btn{
-            margin-top: 1rem;
-        } */
-        
         .loginBtn{
-            border: 1px solid black;  
-            margin: .5rem;
             padding: .7rem;
             border-radius: 1rem;
-        }
-        .loginBtn:hover{
-            color: rgb(246, 246, 246);
+            background-color: rgb(236, 229, 217);
+            color: rgb(14, 14, 14);
+            margin-bottom: 1rem;
         }
         .signup{
            padding: .7rem;
-
+           /* color: rgb(9, 9, 9) !important; */
            border-radius: 1rem;
-            background-color: rgb(194, 123, 16);
-        }
-        .signup:hover{
-            color: rgb(255, 255, 255);
+           background-color: rgb(194, 123, 16);
+           color: white;
         }
         .closeNavbar{
             position: absolute;
-            top: 1rem;
-            right: 1.5rem;
-            color:var(--PrimaryColor); 
+            top: 1.2rem;
+            right: 1.1rem;
+            font-size: 25px;
+            color:#10100f;
         }
         .activeNavbar{
             left:0;
@@ -113,17 +115,20 @@
     .toggleNavbar{
         color: white;
         font-size: 25px;
+        /* color: var(--PrimaryColor); */
+        /* font-size: 25px; */
 
     }
-    .toggleNavbar:hover{
+    /* .toggleNavbar:hover{
       color: #945215;
-    }
+    } */
 
     @media screen and (min-width:769px){
         .toggleNavbar, .closeNavbar{
             display: none;
         }
         .header{
+            /* position: fixed; */
             padding: 1.5rem 2rem;
             
         } 
@@ -138,25 +143,5 @@
             font-size: .9rem;
             font-weight: 400;
             color: white;
-        }
-        .navLink:hover{
-            color: #945215;
-        }
-        .loginBtn{
-            background: none;
-            margin-left: 1rem;
-            padding: .7rem;
-            border-radius: 50px;
-            border: 1px solid #945215;
-            color: black;
-        }
-        .loginBtn:hover{
-
-            background: white;
-        }
-        .signup{
-            margin-left: 1rem;
-            padding: .7rem;
-            border-radius: 50px;
         }
        }

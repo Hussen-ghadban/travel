@@ -7,7 +7,6 @@ import {MdAirportShuttle} from 'react-icons/md'
 import {MdLocationOn} from 'react-icons/md'
 import {BsArrowRightShort} from 'react-icons/bs'
 
-import img from "../../assets/London1.jpg"
 import img1 from "../../assets/china.jpg"
 import img2 from "../../assets/TajMahal.jpg"
 import img3 from "../../assets/London.jpg"
@@ -44,9 +43,9 @@ const Offers = () => {
     <div className="secContainer">
       <div className="secIntro">
         <h2 className="secTitle">Special Offers</h2>
-        <p>from historical cities to natural specteculars, come see the best of the wordl!</p>0
+        <p>from historical cities to natural specteculars, come see the best of the wordl!</p>
       </div>
-      <div className="mainContent grid">
+      <div className="mainContent">
         {
           Offer.map(post=>(
             <div className="singleOffer">
