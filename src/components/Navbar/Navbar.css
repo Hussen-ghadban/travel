@@ -53,7 +53,7 @@
                 width: 100%;
                 /* overflow-x: hidden; */
                 top: 0;
-                left: -200%;
+                left: -100%;
                 box-shadow: 0 2px 4px rgba(209, 209,
                 209,0.904);
                 transition: 1s ease;
@@ -74,9 +74,9 @@
             font-size: .9rem;
             font-weight: 600;
         }
-        .navLink:hover{
+        /* .navLink:hover{
             color: rgb(226, 221, 214);
-        }
+        } */
        
         .loginLink{
             color: black;
@@ -89,10 +89,14 @@
             background-color: rgb(236, 229, 217);
             color: rgb(14, 14, 14);
             margin-bottom: 1rem;
+            border: 1px solid black;
+
         }
         .signup{
            padding: .7rem;
            /* color: rgb(9, 9, 9) !important; */
+           border: 1px solid black;
+
            border-radius: 1rem;
            background-color: rgb(194, 123, 16);
            color: white;

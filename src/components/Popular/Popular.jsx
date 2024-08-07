@@ -52,7 +52,7 @@ const Popular = () => {
       <div className="iconsDiv flex">
         <BsArrowLeftShort className="icon leftIcon"/>
         <BsArrowRightShort className="icon"/>
-      </div>
+      </div>  
   </div>
   <div className="mainContentPopular">
     {data.map(post=>(

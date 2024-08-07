@@ -33,7 +33,6 @@ img{
 
 a:hover{
     color: var(--HoverColor);
-    font-weight: 600;
 }
 a .icon{
  transform: translateX(10px);   
